@@ -4,8 +4,8 @@ $.ajax({
     url: url,
     dataType: 'jsonp',
     success: function(data, status, xhr) {
-        console.log();
-        (data);
+        console.log(data);
+
     }
 });
 
@@ -31,7 +31,7 @@ function boss(data) {
             'data-id': val.id
         }).html(val.Shop.shop_name);
         $link.append($image);
-// Inserting <p class""> and <a> into <div>
+        // Inserting <p class""> and <a> into <div>
         inputDiv.append($details);
         inputDiv.append($shop);
         inputDiv.append($price);
